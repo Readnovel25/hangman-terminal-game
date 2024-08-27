@@ -12,6 +12,9 @@ class HangmanPlayer:
         self.is_loser = False
         self.is_winner = False
 
+    def show_display(self):
+        print(f"{' '.join(self.display)}")
+
     def update_display(self, guess, word):
         if guess in self.display:
             print(f"You have already guessed '{guess}'. Please try another letter next time.")
